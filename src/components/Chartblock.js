@@ -51,7 +51,7 @@ export default class Chartblock extends PureComponent {
     render() {
         return (
             <BarChart
-                width={700}
+                width={680}
                 height={300}
                 data={data}
                 margin={{

@@ -67,7 +67,7 @@ class Page extends React.Component {
                         <Block name={'Выработка'} num={this.state.num3} spantext={'чел./час'} />
                     </div>
 
-                    <Row>
+                    <Row className="white-blocks">
                         <Col sm={6}>
                             <div className="white-block"></div>
                         </Col>
@@ -88,7 +88,7 @@ class Page extends React.Component {
                 </Col>
             </Row>
 
-            <Row>
+            <Row className="blank-white-blocks">
                 <Col sm={8}>
                     <div className="white-block white-block-1"></div>
                     <div className="white-block white-block-1"></div>

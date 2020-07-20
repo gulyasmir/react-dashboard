@@ -2,7 +2,7 @@
 
     background:var(--default-color);
     position: fixed;
-    height:700px;
+    height:960px;
 }
 
 .mymenulayout.is-menu-close{
@@ -19,7 +19,7 @@
 .left-menu {
     background:var(--default-color);
     width:70px;
-    height: 700px;
+    height:960px;
     box-shadow: 0 0 34px rgba(0,0,0,0.15);
 }
 
@@ -99,8 +99,7 @@
 }
 
 .wrapper {
-
-    height:700px;
+    height:960px;
     background: var(--default-color);
     transition: width .5s;
     width: 270px;
@@ -168,7 +167,7 @@
 .mymenulayout.is-menu-close .left-menu {
     background:  var(--default-color);
     width: 70px;
-    height: 700px;
+    height:960px;
     box-shadow: 0 0 34px rgba(0,0,0,0.15);
 }
 
