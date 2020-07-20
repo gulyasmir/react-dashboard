@@ -1,7 +1,7 @@
 .Block {
     padding: 20px;
-    border: 1px solid #0043C4;
-    background: #ffffff;
+    border: 1px solid var(--default-color);
+    background: var(--white-color);
     float:left;
     margin: 10px;
     display: block;
@@ -10,28 +10,28 @@
 .name{
     font-size: 12px;
     line-height: 14px;
-    color: #999999;
+    color: var( --gray-dark-color);
 }
 .num{
     font-style: normal;
     font-weight: bold;
     font-size: 42px;
     line-height: 49px;
-    color: #4F4F4F;
+    color: var(--gray-light-color);
     margin-bottom: 0;
 }
 .oneblock{
     padding: 28px 31px;
 }
 .oneblock:first-child{
-    border-right:1px solid #dddddd;
+    border-right:1px solid var(--gray-color);
 }
 
 .oneblock:last-child{
-    border-left:1px solid #dddddd;
+    border-left:1px solid var(--gray-color);
 }
 .green-text{
-    color: #219653;
+    color: var(--green-color);
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
@@ -39,14 +39,14 @@
 
 }
 .red-text{
-    color: #EB5757;
+    color: var(--red-color);
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
     line-height: 14px;
 }
 .grey-text{
-    color: #BDBDBD;
+    color: var(--gray-gray-color);
     font-size: 12px;
     line-height: 14px;
     font-weight: normal;

@@ -1,5 +1,5 @@
 .mypreloader{
-    background: #fff;
+    background:var( --white-color);
     z-index: 999;
     position: fixed;
     top:0;
@@ -15,5 +15,5 @@ height: 100%;
 }
 
 .text-primary {
-color:#0037A1;
+color:var( --default-color);
 }

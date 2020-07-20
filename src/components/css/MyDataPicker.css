@@ -1,9 +1,9 @@
 .MyDataPicker{
     width: 240px;
     height: 40px;
-    background: url("../img/datapicker.svg") no-repeat 13px center, #FFFFFF;
+    background: url("../img/datapicker.svg") no-repeat 13px center, var(--white-color);
     padding: 10px 10px 10px 40px;
-    border: 1px solid #DDDDDD;
+    border: 1px solid var(--gray-color);
     box-sizing: border-box;
     border-radius: 10px;
     margin: 0 15px;

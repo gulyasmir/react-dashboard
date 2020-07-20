@@ -46,11 +46,13 @@ class Page extends React.Component {
                 <Col sm={3}>
                     <h1>Общая аналитика</h1>
                 </Col>
-                < Col sm={5}>
+                < Col sm={3}>
                     <MyDataPicker/>
-                    <Button variant="primary"  onClick={this.goModal} >Применить</Button>
                 </Col>
-                <Col sm={4}>
+                < Col sm={2}>
+                    <Button className="blue-button" variant="primary"  onClick={this.goModal} >Применить</Button>
+                </Col>
+                <Col sm={3}>
                     <Buttonrandom updateData={this.updateData} />
 
                 </Col>
