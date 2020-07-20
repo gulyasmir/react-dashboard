@@ -9,8 +9,7 @@ import Menu from './Menu.js';
 import logo from './img/logo.png';
 import  './css/Menulayout.css';
 import arrow from './img/arrow.svg';
-import Button from "react-bootstrap/Button";
-import Collapse from 'react-bootstrap/Collapse';
+
 
 class Menulayout extends React.Component {
     constructor(props) {
@@ -24,20 +23,26 @@ class Menulayout extends React.Component {
         })
     }
 
-    openMenu = () => {
-        this.setState({
-            openMenu: true
-        })
-    }
+    handleClick() {
+        const wrapper = document.getElementById('wrapper');
+        wrapper.classList.toggle('is-nav-close');
+        const togglemenu = document.getElementById('togglemenu');
+        togglemenu.classList.toggle('is-menu-close');
 
+                this.setState({
+                    openMenu: !this.state.openMenu
+                })
+
+    }
 
 
     render() {
         return (
-            <div className="mymenulayout ">
+            <div id="togglemenu" className="mymenulayout">
                 <Tab.Container id="left-tabs-example" defaultActiveKey="logo">
                     <Row>
                         <Col sm={3}>
+
                             <Nav variant="pills" className="flex-column left-menu">
                                 <Nav.Item>
                                     <Nav.Link eventKey="logo">
@@ -56,6 +61,8 @@ class Menulayout extends React.Component {
 
                         </Col>
                         <Col sm={9}>
+
+                            <div id="wrapper"  className="wrapper">
                             {this.state.openMenu ? <Tab.Content>
                                 <Tab.Pane eventKey="logo">
                                     <Menu openMenu={this.state.openMenu}/>
@@ -85,14 +92,16 @@ class Menulayout extends React.Component {
                             }
 
 
-                            {this.state.openMenu ? <div className="menu-collaps-button" onClick={this.closeMenu}   >
+                            {this.state.openMenu ? <div className="menu-collaps-button" type="menu-fold"
+                                                        onClick={() => this.handleClick()}   >
                                 <img src={arrow} className="menu-layout-arrow" alt="back"/>
                                 Свернуть
-                            </div> : <div className="menu-collaps-button"  onClick={this.openMenu} >
+                            </div> : <div className="menu-collaps-button"  onClick={() => this.handleClick()} >
                                 <img src={arrow} className="menu-layout-arrow-open" alt="back"/>
 
                             </div> }
 
+                            </div>
 
                         </Col>
                     </Row>
