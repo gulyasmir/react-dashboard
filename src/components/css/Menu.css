@@ -1,0 +1,41 @@
+
+.Menu{
+    float: left;
+    background: #0043C4;
+}
+.Menu .nav{
+    width:100%;
+}
+
+.Menu li {
+    display: block;
+    float: none;
+    width:100%;
+
+    padding: 5px 0;
+}
+.Menu li a {
+    padding: 12px 12px 12px 48px;
+    background: url("../img/link-menu.svg") no-repeat 15px  center;
+    background-size: 14px;
+    color:#ffffff;
+    border-radius: 10px;
+    width: 240px;
+
+
+    font-size: 14px;
+}
+.Menu li .nav-link:hover {
+    background:  url("../img/link-menu.svg") no-repeat 15px  center, #1956CA;
+}
+.Menu li .active {
+    background: url("../img/link-menu-active.svg") no-repeat 15px  center, #0037A1;
+    background-size: 14px;
+    color: #ffffff;
+}
+.Menu li .active:hover {
+    background:  url("../img/link-menu-active.svg") no-repeat 15px  center, #0037A1;
+    background-size: 14px;
+    color: #ffffff;
+}
+
